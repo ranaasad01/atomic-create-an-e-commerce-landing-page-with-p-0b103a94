@@ -1,0 +1,152 @@
+export type Product = {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice?: number;
+  rating: number;
+  reviewCount: number;
+  image: string;
+  category: string;
+  badge?: "sale" | "new" | "featured" | "bestseller";
+  description: string;
+};
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Wireless Noise-Cancelling Headphones",
+    price: 79.99,
+    originalPrice: 129.99,
+    rating: 4.8,
+    reviewCount: 2341,
+    image: "https://m.media-amazon.com/images/I/51QeS0jkx-L._AC_UF894,1000_QL80_DpWeblab_.jpg",
+    category: "Electronics",
+    badge: "sale",
+    description: "Premium sound with 30-hour battery life and active noise cancellation.",
+  },
+  {
+    id: 2,
+    name: "Minimalist Leather Watch",
+    price: 149.00,
+    rating: 4.7,
+    reviewCount: 876,
+    image: "https://fossil.scene7.com/is/image/FossilPartners/FS5304_9L?$sfcc_lifestyle_medium_watches$",
+    category: "Accessories",
+    badge: "featured",
+    description: "Slim profile with genuine leather strap and sapphire crystal glass.",
+  },
+  {
+    id: 3,
+    name: "Ultralight Running Sneakers",
+    price: 94.99,
+    originalPrice: 119.99,
+    rating: 4.6,
+    reviewCount: 1543,
+    image: "https://hips.hearstapps.com/hmg-prod/images/run-lightweight-running-shoes-682b51023eccc.jpg?crop=0.670xw:1.00xh;0.0994xw,0&resize=1200:*",
+    category: "Footwear",
+    badge: "sale",
+    description: "Breathable mesh upper with responsive foam cushioning for all-day comfort.",
+  },
+  {
+    id: 4,
+    name: "Portable Bluetooth Speaker",
+    price: 59.99,
+    rating: 4.5,
+    reviewCount: 3102,
+    image: "https://cdn.thewirecutter.com/wp-content/media/2024/11/portablebluetoothspeakers-2048px-9130.jpg?width=2048&quality=60&crop=2048:1365&auto=webp",
+    category: "Electronics",
+    badge: "bestseller",
+    description: "360° surround sound, waterproof IPX7, and 12-hour playtime.",
+  },
+  {
+    id: 5,
+    name: "Merino Wool Crewneck Sweater",
+    price: 89.00,
+    rating: 4.9,
+    reviewCount: 412,
+    image: "https://brooksbrothers.bynder.com/match/WebName/MS01285_BLACK/ULTIMATE_MERINO_WOOL_CREWNECK_SWEATER_BLACK",
+    category: "Clothing",
+    badge: "new",
+    description: "Ethically sourced merino wool, naturally temperature-regulating.",
+  },
+  {
+    id: 6,
+    name: "Stainless Steel Water Bottle",
+    price: 34.99,
+    originalPrice: 44.99,
+    rating: 4.7,
+    reviewCount: 5678,
+    image: "https://m.media-amazon.com/images/I/6179bFEXjiL.jpg",
+    category: "Lifestyle",
+    badge: "sale",
+    description: "Double-wall vacuum insulation keeps drinks cold 24h, hot 12h.",
+  },
+  {
+    id: 7,
+    name: "Slim Fit Chino Pants",
+    price: 64.99,
+    rating: 4.4,
+    reviewCount: 987,
+    image: "https://www.roddandgunn.com/on/demandware.static/-/Sites-roddandgunn-master-catalog/default/dwc913ca7e/images/007173/VP0611_PEBBLE_FT_LGE.jpg",
+    category: "Clothing",
+    description: "Stretch cotton blend for a tailored look with all-day flexibility.",
+  },
+  {
+    id: 8,
+    name: "Smart Fitness Tracker Band",
+    price: 49.99,
+    originalPrice: 69.99,
+    rating: 4.3,
+    reviewCount: 2210,
+    image: "https://www.transtekcorp.com/uploads/image/20210901/09/waterproof-best-fitness-tracker-watch-band-3s-transtek.jpg",
+    category: "Electronics",
+    badge: "sale",
+    description: "Heart rate, sleep tracking, and 7-day battery in a sleek design.",
+  },
+  {
+    id: 9,
+    name: "Canvas Tote Bag",
+    price: 29.99,
+    rating: 4.6,
+    reviewCount: 1320,
+    image: "https://www.steelecanvas.com/cdn/shop/files/SteeleCanvas_ContentShoot-268.jpg?v=1774292521&width=1445",
+    category: "Accessories",
+    badge: "new",
+    description: "Heavy-duty organic cotton canvas with reinforced handles.",
+  },
+  {
+    id: 10,
+    name: "Ceramic Pour-Over Coffee Set",
+    price: 54.00,
+    rating: 4.8,
+    reviewCount: 763,
+    image: "https://m.media-amazon.com/images/I/7159+ELcEOL._AC_UF894,1000_QL80_.jpg",
+    category: "Lifestyle",
+    badge: "featured",
+    description: "Handcrafted ceramic dripper with matching carafe and filters included.",
+  },
+  {
+    id: 11,
+    name: "Leather Bifold Wallet",
+    price: 44.99,
+    rating: 4.5,
+    reviewCount: 2089,
+    image: "https://www.holtzleather.com/cdn/shop/files/the-slim-dixie-fine-leather-bifold-wallet-7963564_2048x.jpg?v=1762812686",
+    category: "Accessories",
+    description: "Full-grain leather with RFID blocking and 8 card slots.",
+  },
+  {
+    id: 12,
+    name: "High-Top Canvas Sneakers",
+    price: 74.99,
+    originalPrice: 89.99,
+    rating: 4.4,
+    reviewCount: 654,
+    image: "https://m.media-amazon.com/images/I/71LACWqVmKL._AC_UY900_.jpg",
+    category: "Footwear",
+    badge: "sale",
+    description: "Classic high-top silhouette with vulcanized rubber sole.",
+  },
+];
+
+export const categories = ["All", "Electronics", "Clothing", "Accessories", "Footwear", "Lifestyle"];
